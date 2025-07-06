@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="">	
+		.container{
+			width: 920px;
+			background-image: url('bg1.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			padding-bottom: 120px;
+		}
+		.elenadiv{
+			display: flex;
+			justify-content: center;
+			margin-bottom: 50px;
+		}
+		.elena{
+			margin-top: 70px;
+		}
+		.font{
+			font-family: sans-serif;
+		}
+		.list{
+			display:flex;
+			justify-content: center;
+			list-style-type: none;
+			gap: 50px;
+		}
+		.lii{
+			color: white;
+		}
+		.just{
+			font-weight: 600;
+			color: white;
+		}
+		.day{
+			font-size: 60px;
+			color: white;
+			font-weight: 600;
+		}
+		.daydiv{
+			display: flex;
+			justify-content: center;
+			margin-bottom: 20px;
+		}
+		.justdiv{
+			display: flex;
+			justify-content: center;
+			margin-bottom: 70px;
+		}
+		.listdiv{
+			margin-bottom: 60px;
+		}
+		.line{
+			position: absolute;
+			height: 3px;
+			background-color: rgb(81, 102, 102);
+			width: 100px;
+			top:395px;
+			left: 200px;
+		}
+		.line2{
+			position: absolute;
+			height: 3px;
+			background-color: rgb(81, 102, 102);
+			width: 100px;
+			top:395px;
+			left: 635px;
+		}
+		.button{
+			display: block;
+			border-radius: 20px;
+			width: 280px;
+			height: 8px;
+			background-color: rgb(80, 195, 175);
+			margin-left: 320px;
+			padding-bottom: 40px;
+		}
+		.buttona{
+			color: white;
+			font-weight: 600;
+			margin-left: 50px;
+			margin-top: 20px;
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+		.div2{
+			background-color: rgb(238, 238, 239);
+			width: 920px;
+			margin: 0;
+			padding: 0;
+		}
+		.prof{
+			width: 250px;
+			margin-top: 60px;
+		}
+		.profimg{
+			margin-left: 80px;
+		}
+		.la{
+			margin-left: 30px;
+			margin-bottom: 50px;
+			font-weight: 600;
+		}
+		.lor1{
+			color: rgb(136, 139, 143);
+		}
+		.sp{
+			margin-left: 45px;
+		}
+		.list2{
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
+			padding-bottom: 50px;
+		}
+		.amaimg{
+			margin-left: 85px;
+			height: 30px;
+		}
+		.forimg{
+			margin-left: 80px;
+			height: 30px;
+		}
+		.ma{
+			margin-left: 55px;
+			margin-bottom: 50px;
+			font-weight: 600;
+		}
+		.line02{
+			background-color: rgb(226, 227, 228);
+			width: 180px;
+			height: 2px;
+			position: absolute;
+			top: 810px;
+			left: 60px;
+		}
+		.line03{
+			background-color: rgb(226, 227, 228);
+			width: 180px;
+			height: 2px;
+			position: absolute;
+			top: 810px;
+			left: 350px;
+		}
+		.line04{
+			background-color: rgb(226, 227, 228);
+			width: 180px;
+			height: 2px;
+			position: absolute;
+			top: 810px;
+			left: 630px;
+		}
+		.div3{
+			background-color: rgb(245, 245, 245);
+			width: 920px;
+		}
+		.lolo{
+			color: rgb(64, 71, 78);
+			font-weight: 600;
+			margin-top: 35px;
+			margin-bottom: 50px;
+		}
+		.indiv{
+			width: 300px;
+		}
+		.lor2{
+			font-size: 14px;
+		}
+		.list3{
+			display: flex;
+			justify-content: center;
+			gap: 50px;
+			padding-top:80px;
+			padding-bottom:50px;
+		}
+		.button1{
+			display: block;
+			border-radius: 20px;
+			background-color: rgb(80, 195, 175);
+			width: 100px;
+			margin-top: 40px;
+		}
+		.lu{
+			color: white;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			padding-left: 10px;
+		}
+		.div4{
+			background-color: rgb(238, 238, 239);
+			width: 920px;
+			padding-bottom: 40px;
+		}
+		.yo{
+			display: flex;
+			gap: 15px;
+			margin-left: 150px;
+			padding-top: 50px;
+		}
+		.no{
+			font-weight: 600;
+		}
+		.icon{
+			margin-top: 12px;
+		}
+		.po{
+			width: 600px;
+			margin-left: 150px;
+			padding-top: 20px;
+		}
+		.line05{
+			background-color: rgb(229, 229, 230);
+			width: 300px;
+			height: 2px;
+			position: absolute;
+			top: 1565px;
+			left: 150px;
+		}
+		.button2{
+			background-color: rgb(210, 213, 218);
+			display: block;
+			border-radius: 20px;
+			width: 100px;
+			height: 40px;
+			margin-left: 140px;
+			cursor: pointer;
+			margin-top: 40px;
+		}
+		.mo{
+			color: rgb(240, 241, 241);
+			padding: 10px;
+		}
+		.div5{
+			background-color: rgb(245, 245, 245);
+			width: 920px;
+		}
+		.list4{
+			display: flex;
+			align-items: center;
+			justify-content:center;
+		}
+		.li{
+			width: 200px;
+		}
+		.mo{
+			padding-bottom: 20px;
+			margin-top: 50px;
+		}
+		.ro{
+			margin-left: 10px;
+			margin-bottom: 40px;
+		}
+		.lor3{
+			margin-left: 10px;
+		}
+		.aa{
+			color: rgb(114, 205, 189);
+			text-decoration: none;
+			margin-left: 10px;
+			margin-top: 30px;
+			margin-bottom: 50px;
+		}
+		.line06{
+			background-color: rgb(229, 229, 230);
+			width: 180px;
+			height: 2px;
+			position: absolute;
+			top: 2070px;
+			left: 180px;
+		}
+		.line07{
+			background-color: rgb(229, 229, 230);
+			width: 180px;
+			height: 2px;
+			position: absolute;
+			top: 2070px;
+			left: 380px;
+		}
+		.line08{
+			background-color: rgb(229, 229, 230);
+			width: 180px;
+			height: 2px;
+			position: absolute;
+			top: 2070px;
+			left: 580px;
+		}
+		.div6{
+			background-color: rgb(238, 238, 239);
+			width: 920px;
+		}
+		.l01{
+			display: flex;
+			width: 300px;
+			align-items: center;
+			gap: 15px;
+			margin-bottom: 30px;
+			margin-top: 50px;
+		}
+		.list5{
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
+		}
+		.co{
+			font-size: 20px;
+			color: rgb(64, 71, 78);
+		}
+		.button3{
+			margin-top: 50px;
+			display: block;
+			background-color: rgb(80, 195, 175);
+			border-radius: 20px;
+			height: 40px;
+			width: 100px;
+			margin-bottom: 50px;
+		}
+		.buttonp{
+			padding: 10px;
+			color: white;
+		}
+		.line09{
+			background-color: rgb(229, 229, 230);
+			width: 280px;
+			height: 2px;
+			position: absolute;
+			top: 2340px;
+			left: 120px;
+		}
+		.line10{
+			background-color: rgb(229, 229, 230);
+			width: 280px;
+			height: 2px;
+			position: absolute;
+			top: 2340px;
+			left: 520px;
+		}
+		.div7{
+			background-color: rgb(245, 245, 245);
+			width: 920px;
+		}
+		.list6{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 40px;
+			padding-top: 60px;
+			padding-bottom: 50px;
+		}
+		.list06{
+			width: 350px;
+		}
+		.button4{
+			background-color: rgb(210, 213, 218);
+			display: block;
+			border-radius: 20px;
+			width: 100px;
+			height: 40px;
+			cursor: pointer;
+			margin-top: 10px;
+		}
+		.to{
+			padding-bottom:30px;
+		}
+		.lor4{
+			margin-top: 30px;
+		}
+		.lor5{
+			margin-bottom: 10px;
+		}
+		.div8{
+			background-color: rgb(80, 195, 175);
+			width: 920px;
+		}
+		.io{
+			color: white;
+		}
+		.list7{
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			padding-left: 300px;
+		}
+		.listul{
+			display:flex;
+			justify-content: center;
+			list-style-type: none;
+			gap: 70px;
+		}
+		.mn{
+			padding-bottom: 40px;
+			padding-top: 40px;
+		}
+		.mb{
+			padding-bottom: 40px;
+		}
+		.listul2{
+			display:flex;
+			justify-content: center;
+			list-style-type: none;
+			gap: 20px;
+		}
+		.color{
+			color: rgb(136, 139, 143);
+			padding-left: 40px;
+		}
+		.color1{
+			color: rgb(181, 182, 185);
+		}
+		.list11{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 200px;
+		}
+	</style>
+</head>
+<body class="font">
+<div>
+<div class="container">
+	<div class="elenadiv"><img class="elena" src="elena.png"></div>
+	<div class="listdiv">
+	<ul class="list">
+		<li><p class="lii">HOME</p></li>
+		<li><p class="lii">SERVICES</p></li>
+		<li><p class="lii">FEATURES</p></li>
+		<li><p class="lii">CONTACT</p></li>
+	</ul>
+</div>
+<div class="daydiv"><span class="day">HAVE A GOOD DAY</span></div>
+<div class="justdiv"><p class="just">JUST FOR YOU ON THEMEFOREST</p></div>
+<div class="line"></div>
+<div class="line2"></div>
+<div class="button"><p class="buttona">GET YOUR COPY NOW</p></div>
+</div>
+<div class="div2">
+<div class="list2">
+	<div class="prof">
+		<div><img class="profimg" src="user.png"></div>
+		<div><p class="la">PROFESSIONALS</p></div>
+		<div><span class="lor1">Lorem ipsum dolor sit amet</span></div>
+		<div><span class="sp lor1"> consectetur elit</span></div>
+	</div>
+	<div class="prof">
+		<div class=""><img class="amaimg" src="heart.png"></div>
+		<div><p class="ma">AMATEURS</p></div>
+		<div><span class="lor1">Lorem ipsum dolor sit amet</span></div>
+		<div><span class="sp lor1"> consectetur elit</span></div>
+	</div>
+	<div class="prof">
+		<div class=""><img class="forimg" src="headset.png"></div>
+		<div><p class="la">FOR EVERYONE</p></div>
+		<div><span class="lor1">Lorem ipsum dolor sit amet</span></div>
+		<div><span class="sp lor1"> consectetur elit</span></div>
+		<div class="line02"></div>
+		<div class="line03"></div>
+		<div class="line04"></div>
+	</div>
+</div>
+</div>
+<div class="div3">
+<div class="list3">
+	<div class="indiv">
+		<div><img src="img1.png"></div>
+		<div><p class="lolo">RESPONSIVE EMAIL TEMPLATE</p></div>
+		<div><span class="lor1 lor2">Lorem ipsum dolor sit amet, consectetur</span></div>
+		<div><span class="lor1 lor2">adipiscing elit. Donec isterdum mollis.</span></div>
+		<div class="button1"><p class="lu">Read more</p></div>
+	</div>
+    <div>
+    	<div><img src="img2.png"></div>
+		<div><p class="lolo">FULLY COMPATIBLE TEMPLATE</p></div>
+		<div><span class="lor1 lor2">Lorem ipsum dolor sit amet, consectetur</span></div>
+		<div><span class="lor1 lor2">adipiscing elit. Donec isterdum mollis.</span></div>
+		<div class="button1"><p class="lu">Read more</p></div>
+    </div>
+</div>
+</div>
+<div class="div4">
+ <div class="yo">
+   <div><img src="icon.png" class="icon"></div>
+   <div><p class="no">FULLY SUPORTED TEMPLATE</p></div>
+   </div>
+   <div class="po"><p class="lor2 lor1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Suspendisse malesuada sodales risus a Diana luchshaya super pushka love like respect uvajuha lalala mi  kak solnse i luna lubimaya krash raketa bomba petarda super puper.</p></div>
+   <div class="line05"></div>
+   <div class="button2"><p class="mo">Read more</p></div>
+</div>
+<div class="div5">
+<div class="list4">
+	<div class="li">
+		<div><img class="mo" src="img1_2.png"></div>
+		<div><p class="no ro">FULLY LAYERED PSD</p></div>
+		<div class="line06"></div>
+		<div><span class="lor1 lor2 lor3">Lorem ipsum dolor sit amet,</span></div>
+		<div><span class="lor1 lor2 lor3">consectetur adipiscing elit.</span></div>
+		<div><p class="aa">Check this out ></p></div>
+	</div>
+	<div class="li">
+		<div><img class="mo" src="img2_2.png"></div>
+		<div><p class="no ro">FULL COMPATIBILITY</p></div>
+		<div class="line07"></div>
+		<div><span class="lor1 lor2 lor3">Lorem ipsum dolor sit amet,</span></div>
+		<div><span class="lor1 lor2 lor3">consectetur adipiscing elit.</span></div>
+		<div><p class="aa">Check this out ></p></div>
+	</div>
+	<div class="li">
+	    <div><img class="mo" src="img3_2.png"></div>	
+	    <div><p class="no ro">VERY GREAT MODULES</p></div>
+	    <div class="line08"></div>	
+	    <div><span class="lor1 lor2 lor3">Lorem ipsum dolor sit amet,</span></div>
+		<div><span class="lor1 lor2 lor3">consectetur adipiscing elit.</span></div>	
+		<div><p class="aa">Check this out ></p></div>
+    </div>
+</div>
+</div>
+<div class="div6">
+<div class="list5">
+	<div class="l1">
+	<div class="l01">
+		<div><img src="icon_telegram.png"></div>
+		<div><p class="no co">SEND IT NOW</p></div>
+		<div class="line09"></div>
+	</div>
+		<div><span class="lor1">Lorem ipsum dolor sit amet, consectetur</span></div>
+		<div><span class="lor1">adipiscing elit.  Suspendisse malesuada</span></div>
+		<div><span class="lor1">sodales risus a Diana luchshaya</span></div>
+		<div class="button3"><p class="buttonp">Read more</p></div>
+	</div>
+	<div class="l2">
+		<div class="l01">
+		<div><img src="icon_penc.png"></div>
+		<div><p class="no co">VERY NICE TO SEE</p></div>
+		<div class="line10"></div>
+	</div>
+	    <div><span class="lor1">Lorem ipsum dolor sit amet, consectetur</span></div>
+		<div><span class="lor1">adipiscing elit.  Suspendisse malesuada</span></div>
+		<div><span class="lor1">sodales risus a Diana luchshaya</span></div>
+		<div class="button3"><p class="buttonp">Read more</p></div>
+	</div>
+</div>
+</div>
+<div class="div7">
+<div class="list6">
+	<div><img src="img1_3.png"></div>
+	<div class="list06">
+		<div><p class="no to">JUST FOR YOU ON THEMEFOREST</p></div>
+		<div><span class="lor1 lor2 lor4">Lorem ipsum dolor sit amet, consectetur adipi-</span></div>
+		<div><span class="lor1 lor2">scing elit. Donec isterdum mollis risus, in mattis</span></div>
+		<div><span class="lor1 lor2 lor5">erat convallis egestas.</span></div>
+		<div class="button4"><p class="mo">Read more</p></div>
+	</div>
+</div>
+</div>
+<div class="div8">
+<div class="list7">
+	<div><img src="icon_star.png"></div>
+	<div class="mn"><p class="no io">THIS TEMPLATE WAS FEATURED ON</p></div>
+</div>
+<div class="list8">
+	<div class="mb">
+	<ul class="listul">
+		<li><img src="firm1.png"></li>
+		<li><img src="firm2.png"></li>	
+		<li><img src="firm3.png"></li>
+		<li><img src="firm4.png"></li>
+	</ul>
+	</div>
+</div>
+</div>
+<div class="div7">
+<div class="list11">
+	<div>
+	<span class="color">Elenea ©</span>
+	<span class="color1">copyright 2013-Unsubscribe here</span>
+    </div>
+	<div>
+		<ul class="listul2">
+			<li><img src="google.png"></li>
+			<li><img src="facebook.png"></li>
+			<li><img src="twitter.png"></li>
+		</ul>
+	</div>
+</div>
+</div>
+</div>
+</body>
+</html>

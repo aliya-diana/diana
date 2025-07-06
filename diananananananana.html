@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		.i{
+			display: none;
+		}
+		.l{
+			display: block;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			box-shadow: 2px 1px 2px 2px rgb(207, 216, 230);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.divLab{
+			display: block;
+			background-image: url('profile-circle-svgrepo-com.svg');
+			background-size: cover;
+			width: 40px;
+			height: 40px;
+		}
+		.divStar{
+			display: block;
+			background-image: url('star-svgrepo-com (1).svg');
+			background-size: cover;
+			width: 30px;
+			height: 30px;
+		}
+		.i:checked+ .la{
+			box-shadow: inset 2px 1px 2px 2px rgb(207, 216, 230);
+		}
+		.i:checked+ .lab{
+			box-shadow: inset 2px 1px 2px 2px rgb(207, 216, 230);
+		}
+		.i:checked+ .l{
+			box-shadow: inset 2px 1px 2px 2px rgb(207, 216, 230);
+		}
+		.i:checked+ .labe{
+			box-shadow: inset 2px 1px 2px 2px rgb(207, 216, 230);
+		}
+		.divSearch{
+			display: block;
+			background-image: url('search-svgrepo-com.svg');
+			background-size: cover;
+			width: 30px;
+			height: 30px;
+		}
+		.la{
+			display: block;
+			border: 5px #e8ebf5 solid;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			box-shadow: 2px 1px 2px 2px rgb(207, 216, 230)
+			            inset -4px 4px 2px 2px rgb(207, 216, 230);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.divHeart{
+			display: block;
+			background-image: url('heart-svgrepo-com.svg');
+			background-size: cover;
+			width: 30px;
+			height: 30px;
+		}
+		.lab{
+			display: block;
+			border: 5px #e8ebf5 solid;
+			width: 50px;
+			height: 50px;
+			border-radius: 15px;
+			box-shadow: 2px 1px 2px 2px rgb(207, 216, 230)
+			            inset -4px 4px 2px 2px rgb(207, 216, 230);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.labe{
+			display:block;
+			border-radius: 20px;
+			width: 100px;
+			height: 50px;
+			background-color: rgb(235, 238, 247);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			box-shadow: 2px 1px 2px 2px rgb(207, 216, 230);
+		}
+		.p{
+			color: rgb(208, 217, 230);
+			font-family: sans-serif;
+			font-weight: 600;
+		}
+		.in{
+			border-radius: 15px;
+			display: block;
+			width: 95px;
+			height: 30px;
+			background-color: transparent;
+			border: none;
+			outline: none;
+		}
+		.dIn{
+			display: flex;
+			align-items: center;
+			background-color: white;
+			border-radius: 15px;
+			width: 120px;
+			height: 30px;
+			box-shadow: inset 0 2px 2px 2px rgb(207, 216, 230) ;
+		}
+		.im{
+			width: 15px;
+			padding-top: 5px;
+			height: 15px;
+			
+		}
+		.inp{
+			border-radius: 15px;
+			display: block;
+			width: 120px;
+			height: 30px;
+			background-color: transparent;
+			border: none;
+			outline: none;
+			box-shadow: inset 0 2px 2px 2px rgb(207, 216, 230) ;
+		}
+		.inp::placeholder{
+			color: rgb(210, 218, 231);
+			padding-left: 30px;
+		}
+		.divBook{
+			background-image: url('bookmark-svgrepo-com.svg');
+			background-size: cover;
+			width: 30px;
+			height: 30px;
+		}
+		.divSquare{
+			background-image: url('square-svgrepo-com.svg');
+			background-size: cover;
+			width: 30px;
+			height: 30px;
+		}
+		.divHouse{
+			background-image: url('house-svgrepo-com (1).svg');
+			background-size: cover;
+			width: 30px;
+			height: 30px;
+		}
+		.label{
+			width: 30px;
+			height: 15px;
+			background-color: rgb(168, 166, 167);
+			border-radius: 10px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			transition: all .3s linear;
+			padding-left: 2px;
+			position: relative;
+		}
+		.divKnopka{
+			width: 13px;
+			height: 13px;
+			border-radius: 50%;
+			background-color: white;
+			transition: all .3s linear;
+		    left: 2px;
+			position: absolute;
+		}
+		.i:checked+ .label{
+			background-color: rgb(30, 142, 253);
+		}
+		.i:checked+.label .divKnopka{
+			left: 17px;
+		}
+		.i:checked+ .labell .divVertical{
+			top: 55px;
+		}
+		.i:checked+ .labella .divUff{
+			top: 47px;
+		}
+		.labell{
+			width: 15px;
+			height: 70px;
+			border-radius: 10px;
+			display: flex;
+			align-items: flex-start;
+			box-shadow: inset 2px 2px 2px 1px rgb(207, 216, 230);
+			justify-content: flex-start;
+			transition: all .3s linear;
+			padding-left: 2px;
+			position: relative;
+		}
+		.divVertical{
+			width: 13px;
+			height: 13px;
+			border-radius: 50%;
+			background-color: white;
+			transition: all .3s linear;
+			box-shadow: 2px 1px 2px 2px rgb(207, 216, 230);
+		    top: 2px;
+			position: absolute;
+		}
+		.labella{
+			width: 8px;
+			height: 70px;
+			border-radius: 8px;
+			display: flex;
+			align-items: flex-start;
+			box-shadow: inset 2px 2px 2px 1px rgb(207, 216, 230);
+			justify-content: flex-start;
+			transition: all .3s linear;
+			padding-left: 2px;
+			position: relative;
+		}
+		.divUff{
+			width: 6px;
+			height: 20px;
+			border-radius: 8px;
+			background-color: white;
+			transition: all .3s linear;
+			box-shadow: 2px 1px 2px 2px rgb(207, 216, 230);
+		    top: 2px;
+			position: absolute;
+		}
+		.labellabel{
+			border: solid rgb(236, 239, 248) 3px;
+			box-shadow: 2px 1px 2px 2px rgb(207, 216, 230);
+			display: block;
+			width: 100px;
+			height: 3px;
+			border-radius: 5px;
+			user-select: none;
+			background-color: #c4c4c4;
+			cursor: pointer;
+			overflow: hidden;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+		}
+		.divLabell{
+			width: 100px;
+			height: 3px;
+			border-radius: 5px;
+			background-color: #3a6cbd;
+			position: absolute;
+			left: -100px;
+			opacity: 0;
+			transition: all 5s linear;
+		}
+		.i:checked+.labellabel .divLabell{
+			left: 0;
+			opacity: 1;
+		}
+	</style>
+</head>
+<body>
+	<div>
+    	<input class="i" type="checkbox" name="d" id="d">
+    	<label class="l" for="d">
+    		<div class="divLab"></div>
+    	</label>
+    </div>
+    <div>
+    	<input class="i" type="checkbox" name="b" id="b">
+    	<label class="l" for="b">
+    		<div class="divStar"></div>
+    	</label>
+    </div>
+    <div>
+    	<input class="i" type="checkbox" name="n" id="n">
+    	<label class="l" for="n">
+    		<div class="divSearch"></div>
+    	</label>
+    </div>
+    <div>
+    	<input class="i" type="checkbox" name="m" id="m">
+    	<label class="la" for="m">
+    		<div class="divHeart"></div>
+    	</label>
+    </div>
+    <div>
+    	<input class="i" type="checkbox" name="q" id="q">
+    	<label class="lab" for="q">
+    		<div class="divHeart"></div>
+    	</label>
+    </div>
+     <div>
+    	<input class="i" type="checkbox" name="w" id="w">
+    	<label class="labe" for="w">
+    		<p class="p">FOLLOW</p>
+    	</label>
+    </div>
+    <div class="dIn"><input class="in" type="text" name=""><a href="#" class="a"><img class="im" src="search-svgrepo-com.svg"></a></div>
+    <input class="inp" type="password" name="" placeholder="Password">
+    <div>
+    	<input class="i" type="checkbox" name="e" id="e">
+    	<label class="l" for="e">
+    		<div class="divBook"></div>
+    	</label>
+    </div>
+    <div>
+    	<input class="i" type="checkbox" name="r" id="r">
+    	<label class="l" for="r">
+    		<div class="divSquare"></div>
+    	</label>
+    </div>
+     <div>
+    	<input class="i" type="checkbox" name="t" id="t">
+    	<label class="l" for="t">
+    		<div class="divHouse"></div>
+    	</label>
+    </div>
+     <div>
+    	<input class="i" type="checkbox" name="y" id="y">
+    	<label class="label" for="y">
+    		<div class="divKnopka"></div>
+    	</label>
+    </div>
+    <div>
+    	<input class="i" type="checkbox" name="u" id="u">
+    	<label class="labell" for="u">
+    		<div class="divVertical"></div>
+    	</label>
+    </div>
+    <div>
+    	<input class="i" type="checkbox" name="i" id="i">
+    	<label class="labella" for="i">
+    		<div class="divUff"></div>
+    	</label>
+    </div>
+    <div>
+    	<input class="i" type="checkbox" name="p" id="p">
+    	<label class="labellabel" for="p">
+    		<div class="divLabell"></div>
+    	</label>
+    </div>
+</body>
+</html>

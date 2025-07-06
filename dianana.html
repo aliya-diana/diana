@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="">
+		.b{
+			font-family: sans-serif;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+		.mainDiv{
+			background-color: rgb(44, 62, 80);
+			width: 500px;
+			border-radius: 20px;
+			padding-top: 20px;
+		}
+		.d1{
+			display: block;
+			border: 2px rgb(230, 75, 60) solid;
+			width: 180px;
+			height: 60px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 15px;
+			color: rgb(230, 75, 60);
+			text-decoration: none;
+
+			transition: all .1s ease-in;
+		}
+		.d1:hover{
+			color: white;
+			background-color: rgb(230, 75, 60);
+		}
+		.d2{
+			display: block;
+			border: 2px rgb(26,	187, 155) solid;
+			background-image: url('polosa.png');
+			width: 180px;
+			height: 60px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 30px;
+			color: white;
+			text-decoration: none;
+			background-position-x: 0;
+			transition: all .2s ease-in;
+		}
+		.da12{
+			display: flex;
+			justify-content: center;
+			gap: 20px;
+			align-items: center;
+			margin-top: 30px;
+		}
+		.d3{
+			display: block;
+			border: 2px rgb(52, 151, 218) solid;
+			background-color: rgb(52, 151, 218);
+			width: 180px;
+			height: 60px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 15px;
+			color: white ;
+			text-decoration: none;
+		}
+		.d3:hover{
+			background-color: rgb(44, 62, 80);
+			box-shadow: 0 0 15px 8px rgb(52, 151, 218);
+		}
+		.d4{
+			display: block;
+			border: 2px rgb(240, 195, 15) solid;
+			width: 180px;
+			height: 60px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 15px;
+			color: white ;
+			text-decoration: none;
+			overflow: hidden;
+			z-index: 3;
+
+
+			position: relative;
+		}
+		.span{
+			display: block;
+			width: 300px;
+			height: 300px;
+			transform: rotate(45deg);
+			background-color: rgb(240, 195, 15);
+			z-index: 0;
+			left: -200%;
+			top: 200%;
+			transition: all .2s ease-in;
+
+			position: absolute;
+		}
+		.d4:hover .span{
+			left: -10%;
+			top: -110%;
+		}
+		.bb{
+			position: relative;
+			z-index: 5;
+		}
+		.d2:hover{
+			background-position-x: -100px;
+		}
+		.d5{
+			display: block;
+			border: 2px rgb(141, 67, 172) solid;
+			width: 180px;
+			height: 60px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: white ;
+			text-decoration: none;
+			overflow: hidden;
+			margin-bottom: 20px;
+
+			position: relative;
+		}
+		.span2{
+			display: block;
+			width: 0;
+			height: 200px;
+			background-color: rgb(141, 67, 172);
+			transition: all .2s ease-in;
+			z-index: 0;
+
+			position: absolute;
+		}
+		.d5:hover .span2{
+			width: 200px;
+		}
+		.bb2{
+			position: relative;
+			z-index: 5;
+		}
+		.d6{
+			display: block;
+			border: 2px rgb(45, 203, 112) solid;
+			background-image: linear-gradient(180deg,  rgb(44, 62, 80) 50%, rgb(45, 203, 112) 50%);
+			width: 180px;
+			height: 60px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color:rgb(45, 203, 112);
+			transition: all .2s ease-in;
+			text-decoration: none;
+			border-radius: 30px;
+			margin-bottom: 20px;
+		}
+		.d6:hover{
+			color: white;
+		}
+		.main2Div{
+			background-color: rgb(44, 62, 80);
+			width: 500px;
+			border-radius: 20px;
+			padding-top: 20px;
+		}
+		.aa{
+			display: block;
+			border: 2px #2f4dd4 solid;
+			background-image: linear-gradient(180deg,  rgb(44, 62, 80) 50%, rgb(45, 203, 112) 50%);
+			width: 180px;
+			height: 60px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #debce3;
+			transition: all .2s ease-in;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body class="b">
+	<div>
+	    <div class="mainDiv">
+	    	<div class="da12">
+	    	    <a href="#" class="d1">Button 1</a>
+	    	    <a href="#" class="d2">Button 2</a>
+	    	</div>
+	    	<div class="da12">
+	    	    <a href="#" class="d3">Button 3</a>
+	    	    <a href="#" class="d4"><span class="span"></span> <span class="bb">Button 4</span> </a>
+	    	</div>
+	    	<div class="da12">
+	    	    <a href="#" class="d5"><span class="span2"></span><span class="bb2">Button 5</span></a>
+	    	    <a href="#" class="d6">Button 6</a>
+	    	</div>
+	    </div>
+	    <a href="#" class="aa"><span>Special button</span></a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		.b{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			gap: 30px;
+			height: 500vh;
+		}
+		.d1{
+			height: 200px;
+			width: 200px;
+			background-color: rgb(183, 64, 150);
+			border-radius: 50px;
+		}
+		.d2{
+			height: 200px;
+			width: 200px;
+			background-color: rgb(183, 64, 150);
+			border-radius: 50px;
+		}
+		.d3{
+			height: 200px;
+			width: 200px;
+			background-color: rgb(183, 64, 150);
+			border-radius: 50px;
+		}
+		.d1:hover{
+			transition: all 3s linear;
+			transform: rotate(360deg);
+		}
+		.d2:hover{
+			transition: all 3s linear;
+			transform: rotateX(360deg);
+		}
+		.d3:hover{
+			transform: rotateY(360deg);
+			transition: all 3s linear;
+		}
+		.d4{
+			width: 30px;
+			height: 15px;
+			background-color: rgb(168, 166, 167);
+			border-radius: 10px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			transition: all .3s linear;
+			padding-left: 2px;
+			position: relative;
+		}
+		.inDiv{
+			width: 13px;
+			height: 13px;
+			border-radius: 50%;
+			background-color: white;
+			transition: all .3s linear;
+		    left: 2px;
+			position: absolute;
+		}
+		.d4:hover{
+			background-color: rgb(30, 142, 253);
+		}
+		.d4:hover .inDiv{
+			left: 17px;
+		}
+		.d5{
+			background-color: rgb(208, 226, 240);
+			width: 100px;
+			height: 70px;
+			border-top-left-radius: 30px;
+			border-bottom-left-radius: 30px;
+			box-shadow: inset 0 0 2px 2px rgb(199, 214, 225);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+		}
+		.d6{
+			background-color: rgb(208, 226, 240) ;
+			width: 100px;
+			height: 70px;
+			border-top-right-radius: 30px;
+			border-bottom-right-radius: 30px;
+			box-shadow: inset 0 0 2px 2px rgb(199, 214, 225);
+		}
+		.divdiv{
+			display: flex;
+			gap: 10px;
+		}
+		.inDiv2{
+			width: 50px;
+			height: 50px ;
+			background-color: rgb(37, 194, 129);
+			border-radius: 50%;
+			left: 25px;
+			position: absolute;
+			transition: all .4s linear;
+		}
+		.innerDiv1{
+			background-color: white;
+			width: 12px;
+			height: 2px;
+			transform: rotate(45deg);
+			top: 27px;
+			left: 13px;
+			position: absolute;
+			transition: all .4s linear;
+		}
+		.innerDiv2{
+			background-color: white;
+			width: 22px;
+			height: 2px;
+			transform: rotate(-45deg);
+			top: 24px;
+			left: 19px;
+			position: absolute;
+			transition: all .4s linear;
+		}
+		.divdiv:hover .inDiv2{
+			background-color: rgb(228, 69, 64);
+			left: 130px;
+		}
+		.divdiv:hover .innerDiv1{
+			width: 22px;
+			top: 24px;
+			left: 14px;
+		}
+		.divdiv:hover .innerDiv2{
+			left: 14px;
+		}
+		.l{
+			display: block;
+			border-radius: 50%;
+			border: 3px solid rgb(89, 91, 106);
+			width: 70px;
+			height: 70px;
+			user-select: none;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.i{
+			display: none;
+		}
+		.img{
+			width: 86px;
+			height: 86px;
+			display: none;
+		}
+		.i:checked+.l .img{
+			display: block;
+		}
+		.l2{
+			display: block;
+			border-radius: 20px;
+			width: 100px;
+			height: 40px;
+			user-select: none;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.spanImg{
+			display: block;
+			background-color: rgb(50, 73, 95);
+			width: 60px ;
+			height: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-top-left-radius: 15px;
+			border-bottom-left-radius: 15px;
+			transition: all .2s linear;
+		}
+		.img1{
+			width: 30px;
+			height: 30px;
+		}
+		.img2{
+			width: 30px;
+			height: 30px;
+			opacity: 0;
+		}
+		.span2{
+			display: block;
+			background-color: #21d1b4;
+			width: 40px;
+			height: 40px;
+			border-top-right-radius: 15px;
+			border-bottom-right-radius: 15px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition: all .2s linear;
+		}
+		.i:checked+.l2 .spanImg{
+			width: 40px;
+			background-color: rgb(126, 140, 155);
+		}
+		.i:checked+.l2 .span2{
+			width: 60px;
+			background-color: rgb(221, 221, 221);
+		}
+		.i:checked+.l2 .img1{
+			opacity: 0;
+		}
+		.i:checked+.l2 .img2{
+			opacity: 1;
+		}
+		.lab{
+			display: block;
+			width: 100px;
+			height: 100px;
+			user-select: none;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.im{
+			width: 100px;
+			height: 100px;
+			transition: all 60s linear;
+		}
+		.i:checked+ .lab .im{
+			transform: rotate(18000deg);
+		}
+		.labe{
+			display: block;
+			width: 100px;
+			height: 3px;
+			border-radius: 5px;
+			user-select: none;
+			background-color: #c4c4c4;
+			cursor: pointer;
+			overflow: hidden;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+		}
+		.divLab{
+			width: 100px;
+			height: 3px;
+			border-radius: 5px;
+			background-color: #3a6cbd;
+			position: absolute;
+			left: -100px;
+			opacity: 0;
+			transition: all 5s linear;
+		}
+		.i:checked+.labe .divLab{
+			left: 0;
+			opacity: 1;
+		}
+		.mainDiv{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 5px;
+
+		}
+		.div1{
+			width: 30px;
+			height: 60px;
+			background-color: grey;
+			/*animation: load 1s ease-in-out forwards infinite;*/
+		}
+		.div2{
+			width: 30px;
+			height: 50px;
+			background-color: grey;
+			/*animation: load 1s ease-in-out forwards infinite;*/
+			animation-delay: 0.2s;
+		}
+		.div3{
+			width: 30px;
+			height: 60px;
+			background-color: grey;
+			/*animation: load 1s ease-in-out forwards infinite;*/
+			animation-delay: 0.3s;
+		}
+		@keyframes load{
+			0%{
+				height: 50px;
+			}
+			50%{
+				height: 100px;
+			}
+			100%{
+				height: 50px;
+			}
+		}
+		.divdiv{
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+		}
+		.spanchik{
+			display: block;
+			width: 50px;
+			height: 50px;
+			background-color: #d2d4d6;
+			border-radius: 50%;
+			animation: circle 1.5s ease-in-out forwards infinite;
+		}
+		.spaniel1{
+		}
+		.spaniel2{
+			animation-delay: 0.2s;
+		}
+		.spaniel3{
+			animation-delay: 0.3s;
+		}
+		.spaniel4{
+			animation-delay: 0.4s;
+		}
+		.spaniel5{
+			animation-delay: 0.5s;
+		}
+		@keyframes circle{
+			50%{
+				background-color: #424242
+			}
+			100%{
+				background-color: #d2d4d6;
+			}
+		}
+		.spanielchik{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			border: 3px rgb(103, 135, 145) solid;
+			animation: raindrop 1s linear forwards infinite;
+			display: flex;
+			animation-delay: 0.3s;
+		}
+		@keyframes raindrop{
+			50%{
+				width: 100px;
+				height: 100px;
+				opacity: 0;
+			}
+			100%{
+				width: 60px ;
+				height: 60px;
+			}
+		}
+		@keyframes raindrop2{
+			50%{
+				width: 100px;
+				height: 100px;
+				opacity: 0;
+			}
+			100%{
+				width: 20px;
+				height: 20px;
+			}
+		}
+		.o{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			border: 3px rgb(103, 135, 145) solid;
+			animation: raindrop2 1s linear forwards infinite;
+			display: flex;
+			animation-delay: 0.1s;
+		}
+	</style>
+</head>
+<body class="b">
+	<div class="d1"></div>
+	<div class="d2"></div>
+	<div class="d3"></div>
+	<div class="d4">
+		<div class="inDiv"></div>
+	</div>
+	<div class="divdiv">
+	    <div class="d5"><div class="inDiv2"><div class="innerDiv1"></div><div class="innerDiv2"></div></div></div>
+	    <div class="d6"></div>
+    </div>
+    <div>
+    	<input class="i" type="checkbox" name="a" id="a">
+    	<label class="l" for="a">
+    		<img class="img" src="tick-circle-svgrepo-com.svg">
+    	</label>
+    </div>
+    <div>
+    	<input class="i" type="checkbox" name="b" id="b">
+    	<label class="l2" for="b">
+    		<span class="spanImg"><img class="img1" src="tick-svgrepo-com.svg"></span>
+    		<span class="span2"><img class="img2" src="cross-svgrepo-com.svg"></span>
+    	</label>
+    </div>
+    <div>
+    	<input class="i" type="checkbox" name="c" id="c">
+    	<label class="lab" for="c">
+    		<img class="im" src="aliya.png">
+    	</label>
+    </div>
+    <div>
+    	<input class="i" type="checkbox" name="d" id="d">
+    	<label class="labe" for="d">
+    		<div class="divLab"></div>
+    	</label>
+    </div>
+    <div class="mainDiv">
+    	<div class="div1"></div>
+    	<div class="div2"></div>
+    	<div class="div3"></div>
+    </div>
+    <div class="divdiv">
+    	<span class="spanchik spaniel1"></span>
+    	<span class="spanchik spaniel2"></span>
+    	<span class="spanchik spaniel3"></span>
+    	<span class="spanchik spaniel2"></span>
+    	<span class="spanchik spaniel3"></span>
+    	<span class="spanchik spaniel4"></span>
+    	<span class="spanchik spaniel3"></span>
+    	<span class="spanchik spaniel4"></span>
+    	<span class="spanchik spaniel5"></span>
+    </div>
+    <div>
+    	<span class="spanielchik"><span class="o"></span></span>
+    </div>
+
+</body>
+</html>

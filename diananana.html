@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		.mainDiv{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin-top: 70px;
+		}
+		.inputik{
+			border: none;
+			border-bottom: 1px solid rgb(204, 204, 204);
+			width: 200px;
+			margin-bottom: 20px;
+			outline: none;
+		}
+		.a{
+			display: block;
+			width: 80px;
+			height: 30px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background-color: rgb(36, 64, 105);
+			color: white;
+			font-family: sans-serif;
+			font-weight: 700;
+			text-decoration: none;
+			border-radius: 10px;
+			transition: all .2s ease-in;
+		}
+		.a:hover{
+			background-color: rgb(130, 187, 43);
+			box-shadow: -1px 1px 2px 2px;
+		}
+		.inputik:focus{
+			border-bottom: 1px solid rgb(130, 187, 43);
+		}
+		.mainDiv2{
+			background-color: rgb(29, 27, 29);
+			width: 700px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+		.p{
+			color: white;
+			font-family: sans-serif;
+			font-size: 20px;
+			margin-bottom: 0;
+		}
+		.span{
+			font-family: sans-serif;
+			color: rgb(84, 94, 102);
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		.input1{
+			color: white;
+			text-align: center;
+			background-color: rgb(29, 27, 29);
+			border: 1px solid rgb(60, 106, 140);
+			border-radius: 15px;
+			height: 30px;
+			width: 200px;
+			margin-top: 10px;
+			outline: none;
+			transition: all .2s ease-in;
+		}
+		.aa{
+			color: rgb(84, 94, 102);
+			margin-top: 10px;
+			margin-bottom: 10px;
+			font-family: sans-serif;
+		}
+		.aa1{
+			display: block;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 80px;
+			height: 35px;
+			background-color: rgb(29, 27, 29);
+			border: 1px solid rgb(62, 144, 99);
+			color: white;
+			text-decoration: none;
+			border-radius: 20px;
+			margin-bottom: 20px;
+			font-family: sans-serif;
+			transition: all .2s ease-in;
+		}
+		.input1:focus{
+			border-color: rgb(62, 144, 99);
+			width: 300px;
+		}
+		.aa1:hover{
+			background-color: rgb(62, 144, 99);
+		}
+		.divAbout{
+			background-color: rgb(129, 125, 140);
+			width: 500px;
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.pAbout{
+			font-family: sans-serif;
+			color: white;
+		}
+		.div1{
+			width: 50px;
+			transition: all .3s ease-in;
+			height: 2px;
+			background-color: white;
+			position: absolute;
+			top: 13px;
+		}
+		.div2{
+			width: 50px;
+			height: 2px;
+			background-color: white;
+			position: absolute;
+			transition: all .3s ease-in;
+			top: 35px;
+		}
+		.divAbout:hover .div1{
+			transform: rotate(45deg);
+			top: 50%;
+		}
+		.divAbout:hover .div2{
+			transform: rotate(-45deg);
+			top: 50%;
+		}
+		.ddd{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			background-color: black;
+		}
+	</style>
+</head>
+<body>
+	<div class="mainDiv">
+		<input type="text" class="inputik" placeholder="Name">
+		<input type="text" class="inputik" placeholder="Number">
+		<a href="#" class="a">SUBMIT</a>
+	</div>
+	<div class="mainDiv2">
+		<p class="p">LOGIN</p>
+		<span class="span">Please, enter your username and password!</span>
+		<input class="input1" type="text" name="" placeholder="Username">
+		<input class="input1" type="password" name="" placeholder="Password">
+		<a class="aa" href="#">Forgot password?</a>
+		<a class="aa1" href="#">Login</a>
+	</div>
+	<div class="divAbout">
+		<div class="div1"></div><p class="pAbout">About</p><div class="div2"></div>
+	</div>
+	<div class="ddd"></div>
+	<div class="d4">
+		<div class="inDiv"></div>
+	</div>
+</body>
+</html>
