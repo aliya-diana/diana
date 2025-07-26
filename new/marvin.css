@@ -1,0 +1,165 @@
+.b{
+	font-family: sans-serif;
+}
+.a{
+	display: block;
+	background-image: url('../old/book-svgrepo-com.svg');
+	width: 20px;
+	height: 20px;
+	background-size: cover;
+}
+.p{
+	color: grey;
+}
+.a1{
+	background-image: url('../old/sms-svgrepo-com.svg');
+	display: block;
+	width: 20px;
+	height: 20px;
+	background-size: cover;
+}
+.a2{
+	color: black;
+	text-decoration: none;
+	font-weight: 600;
+}
+.div1{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.div2{
+	background-image: url('../old/marvin.webp');
+	width: 80px;
+	height: 80px;
+	background-size: cover;
+	border-radius: 50%;
+}
+.divv{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.p1{
+	font-weight: 600;
+	font-size: 40px;
+	margin: 0;
+}
+.p2{
+	color: rgb(25, 28, 31);
+	font-size: 20px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.p3{
+	color: grey;
+	font-style: italic;
+}
+.a3{
+	text-decoration-style: dotted;
+}
+.img{
+	width: 20px;
+	height: 20px;
+	margin-top: 1.3rem;
+	margin-left: 0.5rem;
+}
+.div3{
+	background-color: rgb(223, 242, 254);
+	width: 800px;
+	height: 100px;
+	display: flex;
+	gap: 5px;
+	border: rgb(203, 236, 254) solid 2px;
+	border-radius: 10px;
+	position: relative;
+}
+.div4{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.p4{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.p5{
+	font-size: 20px;
+}
+.div5{
+	width: 20px;
+	height: 20px;
+	background-color: rgb(5, 47, 74);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: -0.5rem;
+	left: 49.3rem;
+	position: absolute;
+}
+.img1{
+	width: 1rem;
+	height: 1rem;
+	background-size: cover;
+}
+.div6{
+	background-image: url('../old/marvin.webp');
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	background-size: cover;
+	margin-left: 1rem;
+}
+.img2{
+	width: 20px;
+	height: 20px;
+	background-size: cover;
+}
+.p6{
+	font-weight: 600;
+}
+.div7{
+	display:flex;
+	align-items: center;
+	gap: 5px;
+}
+.div8{
+	display: flex;
+	padding-top: 1rem;
+	width: 800px;
+	height: 200px;
+	gap: 5px;
+	margin-top: 1rem;
+	border: 1px solid rgb(243, 238, 238);
+	border-bottom: none;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+.input{
+	width: 850px;
+	height: 90px;
+	border: 1px solid rgb(243, 238, 238);
+}
+.div9{
+	background-color: rgb(139, 139, 141);
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.div10{
+	display: flex;
+	margin-left: 720px;
+	align-items: center;
+	gap: 10px;
+}
+.textarea{
+	width: 800px;
+	height: 50px;
+	border: none;
+	outline: none;
+}
