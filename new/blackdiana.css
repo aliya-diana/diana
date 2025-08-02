@@ -1,0 +1,341 @@
+.b{
+    font-family: sans-serif;
+    color: white;
+}
+.div1{
+    background-image: url('../old/bg.png');
+    height: 35rem;
+    background-size: cover;
+}
+.div2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.d1{
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.1px);
+    -webkit-backdrop-filter: blur(6.1px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 50rem ;
+    justify-content: center;
+    gap: 28rem;
+}
+.p{
+    font-weight: 600;
+}
+.p1{
+    color: white;
+    text-decoration: none;
+}
+.d2{
+    display: flex;
+    gap: 0.5rem;
+}
+.a{ 
+    display: block;
+    border: 2px solid white; 
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+}
+.p2{
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+.p3{
+    font-weight: 600;
+    font-size: 27px;
+    margin-top: 0;
+    margin-top: 0.5rem;
+}
+.d3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 9rem;
+}
+.div3{
+    background-color: rgb(41, 96, 107);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.d4{
+    background-color: rgb(232, 76, 61);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+    height: 210px;
+}
+.d04{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.d5{
+    background-color: rgb(253, 189, 31);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+    height: 210px;
+}
+.d6{
+    background-color: rgb(27, 188, 155);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+    height: 210px;
+}
+.d7{
+    background-color: rgb(155, 88, 181);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+    height: 210px;
+}
+.div4{
+    display: grid;
+    grid-template-columns: 350px 350px;
+    margin-top: -40px;
+}
+.p4{
+    margin: 0;
+}
+.p5{
+    font-size: 23px;
+    font-weight: 600;
+}
+.p6{
+    font-weight: 600;
+}
+.p7{
+    margin-top: 3rem;
+}
+.p9{
+    margin: 0;
+    margin-bottom: 5px;
+}
+.d8{
+    width: 50px;
+    height: 2px;
+    background-color: rgb(46, 107, 118);
+}
+.div5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.d9{
+    width: 280px;
+    background-color: rgb(36, 89, 99);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.d91{
+    width: 100%;
+    height:4px;
+    background-color: rgb(232, 76, 61);
+}
+.d92{
+    width: 100%;
+    height: 4px;
+    background-color: rgb(253, 189, 31);
+}
+.d93{
+    width: 100%;
+    height: 4px;
+    background-color: rgb(27, 188, 155);
+}
+.div6{
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.d10{
+    background-image: url('../old/face1.png');
+    border-radius: 50%;
+    background-size: cover;
+    width: 120px;
+    height: 120px;
+    margin: 2rem;
+}
+.d11{
+    background-image: url('../old/face2.png');
+    border-radius: 50%;
+    background-size: cover;
+    width: 120px;
+    height: 120px;
+    margin: 2rem;
+}
+.d12{
+    background-image: url('../old/face3.png');
+    border-radius: 50%;
+    background-size: cover;
+    width: 120px;
+    height: 120px;
+    margin: 2rem;
+}
+.p8{
+    color: rgb(96,  155,  165) !important;
+}
+.a1{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(232, 76, 61);
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.a2{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(253, 189, 31);
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.a3{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(27, 188, 155);
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.div7{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+.dd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    background-size: cover;
+    margin-bottom: 1rem ;
+    width: 80px;
+    height: 80px;
+}
+.input{
+    width: 150px;
+    background-color: rgb(36, 89, 99);
+    border: 0;
+    border: 2px rgb(46, 107, 118) solid;
+    outline: none;
+}
+.input1{
+    width: 330px;
+    height: 50px;
+    background-color: rgb(36, 89, 99);
+    border: 0;
+    border: 2px rgb(46, 107, 118) solid;
+    outline: none;
+}
+.div8{
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.a4{
+    display: block;
+    border: 2px solid rgb(46, 107, 118); 
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+.div9{
+    background-color: rgb(36, 89, 99);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+.dd1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    background-size: cover;
+    margin-bottom: 1rem ;
+    width: 40px;
+    height: 40px;
+}
+.dd2{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.dd3{
+    width: 400px;
+    height: 2px;
+    background-color:rgb(46, 107, 118) ;
+}
+.a5{
+    color: rgb(160, 145, 59);
+    text-decoration: none;
+}
