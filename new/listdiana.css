@@ -94,3 +94,20 @@ li:not(:first-child) img{
 li{
     position: relative;
 }
+.img2{
+    width: 22px;
+    height: 30px;
+    position: absolute;
+    opacity: 0.2;
+    top: 56px;
+    left: 0;
+}
+.img3{
+    width: 22px;
+    height: 30px;
+    background-size: cover;
+    position: absolute;
+    opacity: 0.2;
+    top: 56px;
+    left: -48px;
+}
