@@ -2,6 +2,10 @@ body{
     font-family: sans-serif;
     background-color: rgb(228, 235, 245);
     color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 .p{
     font-weight: 600;
@@ -14,7 +18,7 @@ body{
     background-color: transparent;
     box-shadow: 4px 0 2px 1px grey;
     position: absolute;
-    top: 80px;
+    top: 120px;
     left: 359px;
 }
 .p1{
