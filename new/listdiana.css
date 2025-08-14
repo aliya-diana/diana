@@ -1,0 +1,96 @@
+body{
+    font-family: sans-serif;
+    background-color: rgb(228, 235, 245);
+    color: white;
+}
+.p{
+    font-weight: 600;
+    font-size: 25px;
+    color: black !important;
+}
+.d1{
+    height: 20rem;
+    width: 1rem;
+    background-color: transparent;
+    box-shadow: 4px 0 2px 1px grey;
+    position: absolute;
+    top: 80px;
+    left: 359px;
+}
+.p1{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 70px;
+    font-size: 30px;
+    font-weight: 600;
+    background-color: white;
+    top: -40px;
+    left: -60px;
+    position: absolute;
+}
+.p01{
+    color: rgb(252, 53, 74) !important;
+}
+.p02{
+    color:  rgb(57, 174, 181);
+}
+.p03{
+    color: rgb(22, 45, 89);
+}
+.p04{
+    color: rgb(243, 90, 14);
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.svg{
+    width: 900px;
+    position: absolute;
+    z-index: -1;
+}
+.l{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.l1{
+    background-image: url('../old/aliya.svg');
+    background-size: contain;
+}
+.l2{
+    background-image: url('../old/aliya1.svg');
+    background-size: contain;
+}
+.l3{
+    background-image: url('../old/aliya2.svg');
+    background-size: contain;
+}
+.l4{
+    background-image: url('../old/aliya3.svg');
+    background-size: contain;
+}
+.img{
+    width: 50px;
+    height: 50px;
+    margin-left: 40px;
+    margin-right: 10px;
+}
+.img1{
+    width: 35px;
+    height: 35px;
+}
+li:not(:first-child) img{
+    margin-left: 48px;
+    margin-right: 17px;
+}
+li{
+    position: relative;
+}

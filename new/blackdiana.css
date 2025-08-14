@@ -1,6 +1,7 @@
 .b{
     font-family: sans-serif;
     color: white;
+    margin: 0;
 }
 .div1{
     background-image: url('../old/bg.png');
