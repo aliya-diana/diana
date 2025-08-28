@@ -1,6 +1,11 @@
 body{
     margin: 0;
 }
+.diana{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .a{
     background-image: url('../old/gorii.webp');
     background-clip: text;
@@ -60,6 +65,7 @@ body{
     display: flex;
     justify-content: center;
     position: fixed;
+    height: 100vh;
 }
 .img{
     margin-left: auto;
