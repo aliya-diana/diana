@@ -92,8 +92,10 @@ body{
     height: 1rem;
 }
 .div2{
-    margin-left: 25%;
     display: flex;
+}
+.div5{
+    margin-left: 25%;
 }
 .a1{
     color: white;
@@ -103,14 +105,229 @@ body{
 .p2{
     margin: 0;
     color: rgb(65, 65, 65);
+    font-family: sans-serif;
+    font-weight: 600;
 }
 .a2{
     display: block;
     background-image: url('../old/blackguy.jpg.webp');
-    width: 25vw;
+    width: 35vw;
     height: 100vh;
     background-size: cover;
+    flex-shrink: 0;
+    position: relative;
 }
 .div3{
-    background-color: black;
+    background-color: rgb(17, 17, 17);
+    display: flex;
+    align-items: center;
+}
+.a3{
+    color: white;
+    font-weight: 600;
+    font-size: 45px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+.div4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem;
+}
+.div04{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem;
+    text-align: right;
+}
+.p3{
+    margin: 0;
+    color: rgb(102, 102, 102);
+    font-family: sans-serif;
+    font-size: 17px;
+    text-align: left;
+}
+.p03{
+    margin: 0;
+    color: rgb(102, 102, 102);
+    font-family: sans-serif;
+    font-size: 17px;
+    text-align: right;
+}
+.dd{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.ddd{
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+}
+.ds{
+    width: 8px;
+    height: 30px;
+    background-color: rgb(243, 198, 35);
+}
+.a4{
+    color: rgb(243, 198, 35);
+    text-decoration: none;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: sans-serif;
+    width: fit-content;
+    border: 2px rgb(243, 198, 35) solid;
+    margin-top: 30px;
+}
+.a04{
+    margin-left: auto;
+}
+.a02{
+    display: block;
+    background-image: url('../old/arrows-maximize-svgrepo-com.svg');
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    opacity: 0;
+    transition: all .3s ease;
+}
+.a2:hover .a02{
+    opacity: 1;
+}
+.a02:hover{
+    background-image: url('../old/arrows-maximize-svgrepo-com (1).svg');
+}
+.dd1{
+    width: 35vw;
+}
+.a5{
+    display: block;
+    background-image: url('../old/leaves.jpg');
+    width: 39.2vw;
+    height: 100vh;
+    background-size: cover;
+    flex-shrink: 0;
+    position: relative;
+}
+.a6{
+    display: block;
+    background-image: url('../old/coal.jpg');
+    width: 35vw;
+    height: 100vh;
+    background-size: cover;
+    flex-shrink: 0;
+    position: relative;
+}
+.a6:hover .a02{
+    opacity: 1;
+}
+.a5:hover .a02{
+    opacity: 1;
+}
+.a7{
+    display: block;
+    background-image: url('../old/leaf.jpg');
+    width: 39.2vw;
+    height: 100vh;
+    background-size: cover;
+    flex-shrink: 0;
+    position: relative;
+}
+.a7:hover .a02{
+    opacity: 1;
+}
+.a8{
+    display: block;
+    background-image: url('../old/building.jpg');
+    width: 35vw;
+    height: 100vh;
+    background-size: cover;
+    flex-shrink: 0;
+    position: relative;
+}
+.a8:hover .a02{
+    opacity: 1;
+}
+.a9{
+    display: block;
+    background-image: url('../old/indiangirl.jpg');
+    width: 39.2vw;
+    height: 100vh;
+    background-size: cover;
+    flex-shrink: 0;
+    position: relative;
+}
+.a9:hover .a02{
+    opacity: 1;
+}
+.a10{
+    display: block;
+    background-image: url('../old/puppy.jpg');
+    width: 35vw;
+    height: 100vh;
+    background-size: cover;
+    flex-shrink: 0;
+    position: relative;
+}
+.a10:hover .a02{
+    opacity: 1;
+}
+.a11{
+    display: block;
+    background-image: url('../old/stick.jpg');
+    width: 39.2vw;
+    height: 100vh;
+    background-size: cover;
+    flex-shrink: 0;
+    position: relative;
+}
+.a11:hover .a02{
+    opacity: 1;
+}
+.a12{
+    display: block;
+    background-image: url('../old/turtle.jpg');
+    width: 35vw;
+    height: 100vh;
+    background-size: cover;
+    flex-shrink: 0;
+    position: relative;
+}
+.a12:hover .a02{
+    opacity: 1;
+}
+.aaa{
+    display: block;
+    background-color:rgb(243, 198, 35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.span{
+    background-image: url('../old/loading-svgrepo-com.svg');
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-size: cover;
 }
