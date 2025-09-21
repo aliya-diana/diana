@@ -1,0 +1,31 @@
+<html>
+<head>
+    <link rel="stylesheet" href="buttondiana.css">
+</head>
+<body>
+    <div id="Imgeshka" class="buttonFundament">
+        <div id="Krujochek" class="tick">
+            <img class="tickImg tick2" src="../old/arrow-up-svgrepo-com.svg" alt="">
+            <img class="tickImg tick1" src="../old/tick-svgrepo-com.svg" alt="">
+        </div>
+        <p id="Peshka">Active</p>
+    </div>
+    <script>
+    let text = document.getElementById("Peshka");
+    let button = document.getElementById("Imgeshka");
+    let dimg = document.getElementById("Krujochek");
+
+    button.addEventListener("click", ()=>{
+        text.innerText = "Waiting"; //меняем текст
+        dimg.innerHTML = "<img src='../old/loading-svgrepo-com (1).svg' class='loadingImg'>"; //ставим картинку загрузки
+        dimg.className = "wait";
+        setTimeout(()=>{
+            text.innerText = "Activated";
+            dimg.innerHTML = "<img src='../old/tick-svgrepo-com (1).svg' class='tickGreen'> ";
+            button.style.backgroundColor = "#3fdc76";
+            dimg.className = "tick";
+        }, 4000);
+    });
+</script>   
+</body>
+</html>
