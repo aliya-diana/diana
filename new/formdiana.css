@@ -1,0 +1,245 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: #e9e9e9;
+}
+.mainDiv{
+    background-color: white;
+    box-shadow: 0 0 3px 1px #00000015; 
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    position: relative;
+    border-radius: 10px;
+}
+.divLog{
+    display: flex;
+    align-items: center;
+}
+.divStripe{
+    width: 5px;
+    height: 40px;
+    background-color: #ed2553;
+}
+.log{
+    color: #ed2553;
+    font-size: 30px;
+    font-weight: 700;
+}
+.divInput{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+}
+.input1{
+    width: 320px;
+    outline: none;
+    border: none;
+    height: 2.5rem;
+}
+.loginAndStripe{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 50px;
+}
+.span1{
+    position: absolute;
+    color: grey;
+    left: 0;
+    font-size: 25px;
+    font-weight: 100;
+    top: 0;
+    transition: all .3s ease;
+}
+.relative{
+    position: relative;
+    border-bottom: 1px solid grey;
+    height: 40px;
+}
+.input1:focus+.span1{
+    transform: scale(0.7);
+    top: -40px;
+    left: -10px;
+}
+.input1:not(:placeholder-shown)+.span1{
+    top: -40px ;
+    left: -10px ;
+    transform: scale(0.7);
+}
+.borderBottom{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    transition: all .3s ease;
+    transform: translateX(-50%);
+    left: 50%;
+}
+.input1:focus~.borderBottom{
+    border-bottom: #ed2553 2px solid;
+    width: 100%;
+    height: 2px;
+}
+.relative {
+    position: relative;
+}
+ .buttonGo{
+    display: block;
+    border: 2px #dddddd solid;
+    color: #dddddd;
+    font-weight: 600;
+    font-size: 25px;
+    text-decoration: none;
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    margin-top: 40px;
+    transition: all .3s ease;
+ }
+ .flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+ }
+ .buttonGo:hover{
+    border: 2px #ed2553 solid;
+    color: #ed2553;
+ }
+ .buttonForgot{
+    color: #dddddd;
+    font-size: 24px;
+    text-decoration: none;
+    transition: all .3s ease;
+    margin-top: 30px;
+ }
+ .buttonForgot:hover{
+    color: #bababa;
+ }
+ .pencilDiv{
+    background-color: #ed2553;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 70px;
+    right: -60px;
+    transition: all .5s ease;
+ }
+ .pencil{
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    transition: all .2s ease;
+ }
+ .opened{
+    width: 500px;
+    height: 590px;
+    right: 0;
+    top: 0;
+    background-color: #ed2553;
+    position: absolute;
+    border-radius: 10px;
+ }
+ .opened .pencil{
+    opacity: 0;
+    width: 0;
+    height: 0;
+ }
+ .divStripe1{
+    width: 5px;
+    height: 40px;
+    background-color: white;
+}
+.log1{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+.relative1{
+    position: relative;
+    border-bottom: 1px solid white;
+    height: 40px;
+}
+.span2{
+    position: absolute;
+    color: white;
+    left: 0;
+    font-size: 25px;
+    font-weight: 100;
+    top: 0;
+    transition: all .3s ease;
+}
+.input2:focus~.borderBottom1{
+    border-bottom: white 2px solid;
+    width: 100%;
+    height: 2px;
+}
+.mainDiv2{
+    display: none;
+}
+.opened .mainDiv2{
+    display: block;
+    background-color: #ed2553;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    position: relative;
+    border-radius: 10px;
+}
+.input2{
+    width: 320px;
+    outline: none;
+    border: none;
+    height: 2.5rem;
+    background-color: #ed2553;
+}
+.input2:focus+.span2{
+    transform: scale(0.7);
+    top: -40px;
+    left: -10px;
+}
+.input2:not(:placeholder-shown)+.span2{
+    top: -40px ;
+    left: -10px ;
+    transform: scale(0.7);
+}
+.next{
+    color: #ed2553;
+    display: block;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    font-weight: 600;
+    width: 320px;
+    height: 50px;
+    text-decoration: none;
+    margin-top: 30px;
+}
+.cross{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 85px;
+    left: 380px;
+    display: none;
+}
+.opened .cross{
+    display: block;
+}

@@ -1,0 +1,115 @@
+body{
+    font-family: sans-serif;
+    background-color: rgb(247, 246, 249);
+}
+.alert{
+    background-color: rgb(249, 218, 219);
+    border-radius: 15px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.alertBlack{
+    font-weight: 600;
+}
+.optimaLogo{
+    background-image: url('/old/optimapng.png');
+    width: 45px;
+    height: 45px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.alert p{
+    padding: 0 15px;
+}
+.spanOptima{
+    font-weight: 600;
+    font-size: 26px;
+}
+.spanBusiness{
+    font-size: 26px;
+}
+.divLogoOptima{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.marginDiv{
+    margin-left: 330px;
+}
+.whiteDiv{
+    background-color: white;
+    width: 600px;
+    border-radius: 20px;
+}
+.vhod{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+}
+.rus{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+.arrow{
+    display: block;
+    width: 30px;
+    height: 20px;
+    background-image: url('/old/arrow-down-svgrepo-com (1).svg');
+    background-size: cover;
+    margin-bottom: 10px;
+}
+.langChoice{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.vhodLang{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.padding{
+    padding: 30px;
+}
+.inputID{
+    outline: none;
+    border: none;
+    border: 1px #bcbcc0 solid;
+    width: 540px;
+    height: 50px;
+    border-radius: 10px;
+}
+.span1{
+    position: absolute;
+    color: #bcbcc0;
+    font-size: 17px;
+    transition: all .3s ease;
+    left: 15px;
+    top: 15px;
+
+}
+.eye{
+    width: 25px;
+    height: 25px;
+}
+.relativeID{
+    position: relative;
+}
+input:focus+.span1{
+    transform: scale(0.7);
+    top: 0;
+    left: 0;
+    color: #666666;
+}
+input:not(:placeholder-shown)+.span1{
+    top: -40px ;
+    left: -10px ;
+    transform: scale(0.7);
+}
+input:focus{
+    border-color: #2f2f30;
+}

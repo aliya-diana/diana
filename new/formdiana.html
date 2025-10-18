@@ -1,0 +1,59 @@
+<html>
+<head>
+    <link rel="stylesheet" href="formdiana.css">
+</head>
+
+<body>
+    <div class="mainDiv">
+        <div class="loginAndStripe">
+            <div class="divStripe"></div>
+            <p class="log">LOGIN</p>
+        </div>
+        <div class="flex">
+            <div class="divInput">
+                <div class="relative"><input class="input1" type="text" placeholder=" "><span class="span1">Username</span>
+                <span class="borderBottom"></span></div>
+                <div class="relative"><input class="input1" type="text" placeholder=" "><span class="span1">Password</span>
+                <span class="borderBottom"></span></div>
+            </div>
+            <a class="buttonGo" href="#">GO</a>
+            <a class="buttonForgot" href="#">Forgot your password?</a>
+        </div>
+        <div class="pencilDiv" id="pen">
+            <div class="mainDiv2">
+                <div class="loginAndStripe">
+                    <div class="divStripe1"></div>
+                    <p class="log1">REGISTER</p>
+                </div>
+                <div class="flex">
+                    <div class="divInput">
+                        <div class="relative1"><input class="input2" type="text" placeholder=" "><span class="span2">Username</span>
+                        <span class="borderBottom1"></span></div>
+                        <div class="relative1"><input class="input2" type="text" placeholder=" "><span class="span2">Password</span>
+                        <span class="borderBottom1"></span></div>
+                        <div class="relative1"><input class="input2" type="text" placeholder=" "><span class="span2">Repeat password</span>
+                        <span class="borderBottom1"></span></div>
+                    </div>
+                    <a href="#" class="next">NEXT</a>
+                </div>
+            </div>
+            <img class="pencil" src="/old/pencil-alt-svgrepo-com.svg" alt="">
+            <img class="cross" src="/old/cross-svgrepo-com.svg" id="cancel" alt="">
+        </div>
+    </div>
+    <script>
+        let pen = document.getElementById("pen");
+        pen.addEventListener("click", ()=>{
+            if(!pen.classList.contains("opened")){
+                pen.classList.add("opened");
+            }
+        });
+        let cross = document.getElementById("cancel");
+        cross.addEventListener("click", ()=>{
+            if(pen.classList.contains("opened")){
+                pen.classList.remove("opened");
+            }
+        });
+    </script>
+</body>
+</html>
