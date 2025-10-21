@@ -37,7 +37,7 @@ body{
     gap: 10px;
 }
 .marginDiv{
-    margin-left: 330px;
+    margin-left: 400px;
 }
 .whiteDiv{
     background-color: white;
@@ -48,6 +48,7 @@ body{
     font-size: 30px;
     font-weight: 600;
     margin: 0;
+    margin-bottom: 30px;
 }
 .rus{
     color: black;
@@ -65,7 +66,7 @@ body{
 .langChoice{
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    margin-top: -30px;
 }
 .vhodLang{
     display: flex;
@@ -82,6 +83,7 @@ body{
     width: 540px;
     height: 50px;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 .span1{
     position: absolute;
@@ -90,11 +92,16 @@ body{
     transition: all .3s ease;
     left: 15px;
     top: 15px;
-
 }
-.eye{
-    width: 25px;
-    height: 25px;
+.pEye{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url('/old/eye-invisible-svgrepo-com.svg');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 10px;
 }
 .relativeID{
     position: relative;
@@ -112,4 +119,122 @@ input:not(:placeholder-shown)+.span1{
 }
 input:focus{
     border-color: #2f2f30;
+}
+.linkRemember{
+    text-decoration: none;
+    font-weight: 600;
+}
+.buttonContinue{
+    display: block;
+    background-color: #e4e4e6;
+    width: 270px;
+    height: 50px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-weight: 600;
+}
+.buttonPhoneNumber{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    width: 270px;
+    height: 50px;
+    font-weight: 600;
+}
+.flexButtons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 110px;
+    padding-bottom: 20px;
+}
+.help{
+    color: #6c6c70;
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: white;
+    border-radius: 20px;
+    width: 130px;
+    height: 30px;
+}
+.imgCall{
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    transform: rotate(270deg);
+}
+.questions{
+    color: #6c6c70;
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: white;
+    border-radius: 20px;
+    width: 200px;
+    height: 30px;
+}
+.questionImg{
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+}
+.pdf{
+    color: #6c6c70;
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: white;
+    border-radius: 20px;
+    width: 260px;
+    height: 30px;
+}
+.flexButtons2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.fleex{
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 13px;
+    gap: 20px;
+    width: 600px;
+}
+.a{
+    color: grey;
+    text-decoration-color: grey;
+}
+.p{
+    margin: 0;
+}
+.d{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

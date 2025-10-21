@@ -43,8 +43,8 @@
     </div>
     <script>
         let pen = document.getElementById("pen");
-        pen.addEventListener("click", ()=>{
-            if(!pen.classList.contains("opened")){
+        pen.addEventListener("click", (e)=>{
+            if(!pen.classList.contains("opened") && !e.target.classList.contains("cross")){
                 pen.classList.add("opened");
             }
         });
