@@ -1,0 +1,556 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+.logoWPX{
+    background-image: url('/old/wpx.png');
+    background-size: 100%;
+    display: block;
+    width: 125px;
+    height: 34px;
+    cursor: pointer;
+}
+.arrowList{
+    display: block;
+    background-image: url('/old/arrow-down-339-svgrepo-com.svg');
+    width: 10px;
+    height: 10px;
+    background-size: cover;
+}
+.pricingText{
+    font-weight: 600;
+}
+.flexPricing{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.aLink{
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+.divFlex1{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+.buttonStart{
+    color: white;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(252, 88, 25);
+    text-decoration: none;
+    width: 110px;
+    height: 35px;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 20px;
+}
+.imgProfile{
+    width: 30px;
+    height: 30px;
+}
+.flexButtonAndProfile{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.upFlex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px rgba(216, 213, 213, 0.548) solid;
+}
+.question{
+    color: rgb(255, 105, 0);
+    font-weight: 700;
+    font-size: 21px;
+    margin: 0;
+}
+.answer{
+    font-weight: 600;
+    font-size: 65px;
+    width: 500px;
+    margin: 0;
+    margin-top: 20px;
+}
+.bigImg{
+    background-image: url('/old/wpxBig.png');
+    width: 700px;
+    height: 500px;
+    background-size: cover;
+}
+.flexBigImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -40px;
+}
+.text{
+    color: rgb(25, 25, 25);
+    font-size: 14px;
+}
+.excellent{
+    font-size: 18px;
+}
+.stars{
+    width: 28px;
+    height: 28px;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00b67a;
+}
+.divGrey{
+    background-color: rgb(242, 242, 242);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.imgstar{
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+}
+.aFlexStar{
+    display: block;
+    display: flex;
+    gap: 3px;
+}
+.oneStar{
+    display: block;
+    background-image: url('/old/star-filled-rate-rating-bookmark-favourite-save-priority-important-svgrepo-com.svg');
+    width: 28px;
+    height: 28px;
+    background-size: cover;
+}
+.trustpilot{
+    color: black;
+    text-decoration-color: transparent;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+.search{
+    outline: none;
+    width: 80%;
+    border: 2px #961251 solid;
+    height: 50px;
+    border-radius: 30px;
+    position: relative;
+}
+.searchImg{
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    position: absolute;
+    top: 12px;
+    left: 84%;
+}
+.relative{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.i{
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+}
+.a{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #961251 ;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    width: 170px;
+    border: 2px solid #961251;
+    height: 35px;
+    border-radius: 20px;
+    justify-content: space-evenly;
+}
+.d{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+.d2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+.recentP{
+    font-weight: 800;
+    font-size: 25px;
+}
+.seeA{
+    color: #961251;
+    text-decoration: none;
+    font-size: 19px;
+}
+.recentAndSee{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 55%;
+}
+.yellowD{
+    background-image: url('/old/yellow.png');
+    width: 350px;
+    height: 200px;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.textYellow{
+    font-size: 16px;
+    color: black;
+    width: 280px;
+    display: block;
+    margin-bottom: 30px;
+}
+.aYellow{
+    text-decoration: none;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px rgb(211, 207, 207) solid;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 15px;
+}
+.pinkYellow{
+    color: #961251;
+    font-size: 13px;
+    font-weight: 600;
+}
+.greyYellow{
+    color: grey;
+    font-size: 14px;
+    font-weight: 600;
+}
+.greyPink{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.orangeD{
+    background-image: url('/old/orange.png');
+    width: 350px;
+    height: 200px;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.orangeD2{
+    background-image: url('/old/orange2.png');
+    width: 350px;
+    height: 200px;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.purpleD{
+    background-image: url('/old/purple.png');
+    width: 350px;
+    height: 200px;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.purpleD2{
+    background-image: url('/old/purple2.png');
+    width: 350px;
+    height: 200px;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.orangeD3{
+    background-image: url('/old/orange3.png');
+    width: 350px;
+    height: 200px;
+    background-size: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.gridD{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 20px;
+}
+.viewButton{
+    display: block;
+    text-decoration: none;
+    color: #fc5819;
+    font-weight: 600;
+    font-size: 20px;
+    border: 2px #fc5819 solid;
+    border-radius: 20px;
+    width: 170px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttonFlex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+.dViolet{
+    display: flex;
+    flex-direction: column;
+    background-color: #961251;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    position: relative;
+}
+.p{
+    color: white;
+    font-size: 22px;
+    margin: 0;
+}
+.p1{
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+    margin: 0;
+}
+.buttonJoin{
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fc5819;
+    width: 200px;
+    height: 55px;
+    border-radius: 25px;
+}
+.f{
+    text-decoration: none;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.dAbsolute{
+    background-image: url('/old/highfive.png');
+    width: 270px;
+    height: 230px;
+    background-size: cover;
+    position: absolute;
+    left: 75%;
+    top: -40px;
+}
+.pNeed{
+    color: #961251;
+    font-weight: 600;
+    font-size: 25px;
+    margin: 0;
+}
+.s13{
+    color: #961251;
+    font-weight: 600;
+    font-size: 50px;
+    margin: 0;
+}
+.purpleDo{
+    color: #961251;
+    font-weight: 600;
+    font-size: 20px;
+}
+.flex13purpleDo{
+    display: flex;
+    align-items: center;
+}
+.doDiv{
+    display: flex;
+    flex-direction: column;
+}
+.margin0{
+    margin: 0;
+}
+.mainFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+}
+.buttonFree{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fc5819;
+    width: 200px;
+    height: 50px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 25px;
+}
+.plane{
+    background-image: url('/old/needForSpeed.png');
+    background-size: cover;
+    width: 600px;
+    height: 400px;
+}
+.netVoobrajeniya{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.aList{
+    color: white;
+    text-decoration: none;
+}
+.aList:hover{
+    color: #f4d802;
+}
+.purpleDiv{
+    background-color: #961251;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 200px;
+    padding: 20px;
+}
+.Lista{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.listDa{
+    display: flex;
+    gap: 20px;
+}
+.wpxImg{
+    background-image: url('/old/wpxWhite.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width: 140px;
+    height: 70px;
+    cursor: pointer;
+}
+.a1{
+    background-color: #fc5819;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50% ;
+}
+.img{
+    width: 20px;
+    height: 20px;
+}
+.img1{
+    width: 15px;
+    height: 15px;
+}
+.imgList{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.blin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bottomDiv{
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    box-shadow: black 2px 2px 2px 2px;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    left: 5px;
+    color: black;
+    text-decoration: none;
+}
+.mujikSnizu{
+    display: block;
+    background-image: url('/old/mujikSnizu.png');
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+}
+.uf{
+    color: black;
+    text-decoration: none;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: lightgray 2px 2px 2px 1px;
+}
+.nz{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+.cross{
+    display: block;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    opacity: 0;
+}
+.crossImg{
+    width: 20px;
+    height: 20px;
+}
+.nz:hover > :first-child {
+    opacity: 1;
+}

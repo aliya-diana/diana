@@ -84,6 +84,7 @@ body{
     height: 50px;
     border-radius: 10px;
     margin-bottom: 20px;
+    padding-left: 8px;
 }
 .span1{
     position: absolute;
@@ -113,8 +114,8 @@ input:focus+.span1{
     color: #666666;
 }
 input:not(:placeholder-shown)+.span1{
-    top: -40px ;
-    left: -10px ;
+    top: 0;
+    left: 0;
     transform: scale(0.7);
 }
 input:focus{
